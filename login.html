@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap"
+        rel="stylesheet" />
+    <title>Login to Client Portal | Meythaler & Zambrano Abogados</title>
+    <meta name="author" content="Meythaler & Zambrano | Login" />
+    <meta name="description" content="Login to client portal | M&Z" />
+    <link href="img/favicons/favicon-32x32.png" rel="shortcut icon" />
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png" />
+    <link rel="manifest" href="img/favicons/site.webmanifest" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <!-- Hotjar Script -->
+    <script>
+        (function (h, o, t, j, a, r) {
+            h.hj = h.hj || function () { (h.hj.q = h.hj.q || []).push(arguments) };
+            h._hjSettings = { hjid: 3719927, hjsv: 6 };
+            a = o.getElementsByTagName('head')[0];
+            r = o.createElement('script'); r.async = 1;
+            r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+            a.appendChild(r);
+        })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
+    </script>
+</head>
+
+<body>
+    <header class="css-box-shadow">
+
+    </header>
+
+    <main>
+        <div class="container-login" id="container-login">
+            <div class="form-container sign-up-container">
+                <form action="#">
+                    <h3 style="color: #411315;">Solicitar una cuenta</h3>
+                    <span>Ingrese sus datos por favor</span>
+                    <input type="text" placeholder="Name" />
+                    <input type="email" placeholder="Email" />
+                    <br>
+                    <br>
+                    <button-login>Solicitar cuenta</button-login>
+                </form>
+            </div>
+            <div class="form-container sign-in-container">
+                <form action="#">
+                    <a href="https://www.meythalerzambranoabogados.com/" target="_blank">
+                        <img src="img/@2logo2.png" alt="Meythaler & Zambrano Logo">
+                    </a>
+                    <span>Ingrese sus credenciales</span>
+                    <input type="email" placeholder="Email" />
+                    <input type="password" placeholder="Password" />
+                    <a href="#">¿Olvidó su constraseña?</a>
+                    <button-login>Iniciar sesión</button-login>
+                </form>
+            </div>
+            <div class="overlay-container">
+                <div class="overlay">
+                    <div class="overlay-panel overlay-left">
+                        <a href="https://www.meythalerzambranoabogados.com/" target="_blank">
+                            <img src="img/@2logo.png" alt="Meythaler & Zambrano Logo">
+                        </a>
+                        <h4 style="color: #F6F4F4;">Accede a tu Estudio Jurídico Virtual</p>
+                            <br>
+                        <button-login class="ghost" id="signIn">Iniciar sesión</button-login>
+                    </div>
+                    <div class="overlay-panel overlay-right">
+                        <h3 style="color: #F6F4F4;">¿No tienes cuenta?</h3>
+                        <button-login class="ghost" id="signUp">Crear cuenta</button-login>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="center" id="contact">
+    </footer>
+    <script src="js/scripts.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+</body>
+
+</html>
