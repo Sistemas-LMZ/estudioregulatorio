@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css" />
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+
+  <!-- Keep only one set of preconnect links -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <!-- Font imports -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap"
+    rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap"
+    rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap"
+    rel="stylesheet" />
+
+  <title>Meythaler & Zambrano | Client portal</title>
+  <meta name="author" content="Meythaler & Zambrano | Client portal" />
+  <meta name="description" content="Client portal for M&Z clients." />
+  <link href="img/favicons/favicon-32x32.png" rel="shortcut icon" />
+  <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png" />
+  <link rel="manifest" href="img/favicons/site.webmanifest" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <style>
+      .nav-link {
+          color: #000000;
+      }
+  
+      .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+          color: #fff;
+          background-color: #18283b;
+      }
+  
+      .nav-link:focus, .nav-link:hover {
+          color: #18283b;
+      }
+  
+      .tab {
+        color: #fff;
+        overflow: hidden;
+        border: 1px solid #18283b;
+        background-color: #18283b;
+      }
+  
+      /* Style the buttons inside the tab */
+      .tab button {
+        background-color: inherit;
+        float: left;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 14px 16px;
+        transition: 0.3s;
+        font-size: 17px;
+        color: #ffffff;
+      }
+  
+      /* Change background color of buttons on hover */
+      .tab button:hover {
+        background-color: #457b9d;
+      }
+  
+      /* Create an active/current tablink class */
+      .tab button.active {
+        background-color: #457b9d;
+      }
+  
+      /* Style the tab content */
+      .tabcontent {
+        display: none;
+        padding: 6px 12px;
+        border: 1px solid #ccc;
+        border-top: none;
+      }
+  
+      .grid-container {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        padding: 10px;
+      }
+  
+      .grid-item {
+        text-align: center;
+      }
+    </style>
+  
+    <!-- Hotjar Script -->
+  <script>
+    (function (h, o, t, j, a, r) {
+      h.hj = h.hj || function () { (h.hj.q = h.hj.q || []).push(arguments) };
+      h._hjSettings = { hjid: 3719927, hjsv: 6 };
+      a = o.getElementsByTagName('head')[0];
+      r = o.createElement('script'); r.async = 1;
+      r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+      a.appendChild(r);
+    })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
+  </script>
+</head>
+
+<body>
+  <header class="css-box-shadow">
+    <div class="container" id="header">
+      <div class="navtoggle" id="myNavtoggle">
+        <nav>
+          <div id="nav-bar">
+            <input type="checkbox" id="nav-toggle">
+
+            <div id="nav-header">
+              <a id="nav-title" href="https://www.meythalerzambranoabogados.com/" target="_blank">
+                <img src="img/@1logo.png" alt="Meythaler & Zambrano Logo">
+              </a>
+              <label for="nav-toggle">
+                <span id="nav-toggle-burger"></span>
+              </label>
+            </div>
+
+            <div id="nav-content">
+              <hr>
+              <div class="nav-button">
+                <a href="index.html">
+                  <i class="fas fa-registered"></i><span>Inicio</span>
+                </a>
+              </div>
+              <div class="nav-button">
+                <a href="productos.html">
+                  <i class="fas fa-dollar-sign"></i><span>Gestión de Productos</span>
+                </a>
+              </div>
+              <div class="nav-button">
+                <a href="defensa-regulatoria.html">
+                  <i class="fas fa-calendar-check"></i><span>Acciones Legales</span>
+                </a>
+              </div>
+              <div class="nav-button">
+                <i class="fas fa-tags"></i><span>Calendario</span>
+              </div>
+              <br>
+              <br>
+              <br>
+              <hr>
+              <div class="nav-button">
+                <i class="fas fa-legal"></i><span>Aviso Legal</span>
+              </div>
+              <div class="nav-button">
+                <i class="fas fa-phone"></i><span>Contacto</span>
+              </div>
+              <div class="nav-button">
+                <i class="fas fa-sign-out"></i><span>Log out</span>
+              </div>
+            </div>
+
+            <input type="checkbox" id="nav-footer-toggle">
+
+            <div id="nav-footer">
+              <div id="nav-footer-heading">
+                <div id="nav-footer-avatar">
+                  <img src="img/@1profile.png" alt="profile">
+                </div>
+                <div id="nav-footer-titlebox">
+                  <a id="nav-footer-title" href="" target="_blank">Nordisk</a>
+                </div>
+                <label for="nav-footer-toggle">
+                  <i class="fas fa-caret-up"></i>
+                </label>
+              </div>
+              <div id="nav-footer-content">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua.
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <h2>NOVO NORDISK PANAMA S.A.</h2>
+      <div>
+        <h3>Listado de Productos</h3>
+        <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Buscar por palabra clave"
+          title="Type in a name">
+        <div id="tableContainer">
+          <table id="myTable">
+            <tr class="header">
+              <th style="width: 15%;">Registro Sanitario</th>
+              <th>Nombre Comercial</th>
+              <th>Principio Activo</th>
+              <th>Concentración</th>
+              <th>Titular Producto</th>
+              <th>Titular Registro</th>
+              <th>Ficha</th>
+            </tr>
+            <tr>
+              <td>211-MBE-0821</td>
+              <td>SAXENDA</td>
+              <td>LIRAGLUTIDA</td>
+              <td>6mg/ml</td>
+              <td>NOVO NORDISK A/S, BAGSVAERD - DINAMARCA</td>
+              <td>LETERAGO DEL ECUADOR S.A. QUITO - ECUADOR</td>
+              <td><button onclick="verFicha()">Generar Ficha</button></td>
+            </tr>
+            <tr>
+              <td>221-MBE-1221</td>
+              <td>XULTOPHY</td>
+              <td>INSULINA DEGLUDEC + LIRAGLUTIDA</td>
+              <td>600 nmol + 960 nmol/ml, 100U + 3.6 mg/ml</td>
+              <td>NOVO NORDISK A/S, BAGSVAERD - DINAMARCA</td>
+              <td>LETERAGO DEL ECUADOR S.A. QUITO - ECUADOR</td>
+              <td><button onclick="verFicha()">Generar Ficha</button></td>
+            </tr>
+          </table>
+        </div>
+        
+        <div id="fichaProducto" class="fichaProducto" style="visibility: hidden;">
+          <h1>Gestión de Medicamento SAXENDA 6mg/ml</h1>
+          <div class="tab">
+            <button class="tablinks" onclick="openTabs(event, 'Regulatorio')">Status Regulatorio</button>
+            <button class="tablinks" onclick="openTabs(event, 'Precios')">Fijación Precios</button>
+            <button class="tablinks" onclick="openTabs(event, 'Datos')">Mecanismos de Protección Vigentes</button>
+            <!--<button class="tablinks" onclick="openTabs(event, 'Etiquetas')">Etiquetas</button>
+            <button class="tablinks" onclick="openTabs(event, 'EtiquetasFile')">Etiquetas Archivos</button>-->
+          </div>
+
+          <div id="Regulatorio" class="tabcontent">
+            <table class="table">
+              <tr>
+                <td>Nro. registro sanitario</td>
+                <td><a href="file/211-MBE-0821 Saxenda.pdf" target="_blank">211-MBE-0821</a></td>
+              </tr>
+              <tr>
+                <td>Forma Farmacéutica</td>
+                <td>Solución inyectable</td>
+              </tr>
+              <tr>
+                <td>Solicitante</td>
+                <td>Leterago del Ecuador</td>
+              </tr>
+              <tr>
+                <td>Categoría de Venta</td>
+                <td>Bajo receta médica</td>
+              </tr>
+              <tr>
+                <td>Presentación comercial</td>
+                <td>
+                  CAJA DE CARTÓN CON 1 PLUMA PRELLENADA DE 3.0ml CON 18mg
+                </td>
+                <td>
+                  <li><a href="file/etiquet interna (Saxenda).pdf" target="_blank"><i class="fa-solid fa-file"></i> Etiquet Interna</a></li>
+                  <li><a href="file/etiqueta caja (Saxenda).pdf" target="_blank"><i class="fa-solid fa-file"></i> Etiqueta Caja</a></li>
+                  <li><a href="file/inserto (Saxenda).pdf" target="_blank"><i class="fa-solid fa-file"></i> Inserto</a></li>
+                </td>
+              </tr>
+              <tr>
+                <td>Última Actualización (trámite y fecha)</td>
+                <td>Cambios en el proceso de manufactura: implementación de una segunda filtración esterilizante
+                  (05/10/2024)</td>
+              </tr>
+              <tr>
+                <td>Fecha de vigencia</td>
+                <td>5 de agosto de 2026</td>
+              </tr>
+              <!--<tr>
+                <td>Alerta de Actualización</td>
+                <td>5 de marzo de 2026</td>
+              </tr>-->
+            </table>
+          </div>
+          
+          <div id="Precios" class="tabcontent">
+            <table class="table">
+              <tr>
+                <td>Categoría del medicamento</td>
+                <td><a href="file/oficio de categorización.pdf" target="_blank">No estratégico</a></td>
+              </tr>
+              <tr>
+                <td>Régimen de precios</td>
+                <td>Liberado de precios</td>
+              </tr>
+              <tr>
+                <td>Precio notificado (para productos liberados)</td>
+                <td>USD $314.48</td>
+              </tr>
+              <tr>
+                <td>Fecha última notificación (para productos liberados)</td>
+                <td><a href="file/solicitud fecha de notificación.pdf" target="_blank">07 de septiembre de 2022</a></td>
+              </tr>
+              <!--<tr>
+                <td>Último trámite</td>
+                <td>N/A</td>
+              </tr>-->    
+            </table> 
+          </div>
+          
+          <div id="Datos" class="tabcontent">
+            <table class="table">
+              <tr>
+                <td>Entidad Química nueva (Sí/No)</td>
+                <td>No</td>
+              </tr>
+              <tr>
+                <td>Fecha de vigencia del período de exclusividad</td>
+                <td>No Aplica</td>
+              </tr>
+              <tr>
+                <td>Fecha de reconocimiento</td>
+                <td>No Aplica</td>
+              </tr>
+              <tr>
+                <td>Obligados a presentar bioequivalencia</td>
+                <td>No</td>
+              </tr>
+              <tr>
+                <td>Patente</td>
+                <td>No</td>
+              </tr>
+              <tr>
+                <td>Competidores registrados o en proceso de inscripción</td>
+                <td>No Aplica</td>
+              </tr>    
+            </table>
+          </div>
+
+          <div id="Etiquetas" class="tabcontent">
+            <div class="grid-container">
+              <div class="grid-item">
+                <img src="img/@etiquetaInterna.png" class="rounded" alt="profile">
+              </div>
+              <div class="grid-item">
+                <img src="img/@etiquetaCaja.png" class="rounded" alt="profile">
+              </div>   
+            </div>
+          </div>
+
+          <div id="EtiquetasFile" class="tabcontent">
+            <div class="grid-container">
+              <div class="grid-item">
+                <a href="file/etiquet interna (Saxenda).pdf" target="_blank"><i class="fa-solid fa-file fa-2xl	"></i> etiquet interna (Saxenda)</a>
+              </div>
+              <div class="grid-item">
+                <a href="file/etiqueta caja (Saxenda).pdf" target="_blank"><i class="fa-solid fa-file fa-2xl	"></i> etiqueta caja (Saxenda)</a>
+              </div>
+              <div class="grid-item">
+                <a href="file/inserto (Saxenda).pdf" target="_blank"><i class="fa-solid fa-file fa-2xl	"></i> inserto (Saxenda)</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="center" id="contact">
+
+  </footer>
+  <script src="js/scripts.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+  <script>
+    function verFicha() {
+      var x = document.getElementById("fichaProducto");
+      if (window.getComputedStyle(x).visibility === "hidden") {
+        x.style.visibility = "visible";
+        document.querySelector('#btn-reporte').innerHTML = 'Ocultar Reporte';
+      }else if(window.getComputedStyle(x).visibility === "visible"){
+        x.style.visibility = "hidden";
+        document.querySelector('#btn-reporte').innerHTML = 'Ver Reporte';
+      }
+    }
+
+    function openTabs(evt, cityName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(cityName).style.display = "block";
+        evt.currentTarget.className += " active";
+      }
+  </script>
+</body>
+
+</html>
